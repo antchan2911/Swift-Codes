@@ -1,0 +1,105 @@
+Declaração de Variáveis e Tipos:
+
+var -> variáveis voláteis
+let -> variáveis imutáveis 
+
+var/let nome: Tipo = valor
+
+let inteiro: Int = 42
+let flutuante: Float = 3.14
+let duplo: Double = 3.14159265359
+let booleano: Bool = true
+let texto: String = "Olá, Swift!"
+
+// conversão
+
+var n: Int = 1234
+let numTOstring = String(n)
+
+
+Entrada e Saída:
+
+
+var numero: Int = 0
+
+Entrada // 
+
+if let input = readLine(), let conversão = Int(input) {
+			numero = conversão
+}
+
+Saída // 
+
+print("\(numero)")
+
+
+Operações Lógicas, Aritméticas e Relacionais:
+
+
+// Operações aritméticas
+let soma = 5 + 3
+let subtracao = 5 - 3
+let multiplicacao = 5 * 3
+let divisao = 5 / 3
+
+// Operações relacionais
+let maior = 5 > 3
+let menor = 5 < 3
+let igual = 5 == 5
+let diferente = 5 != 3
+
+// Operações lógicas
+let eLogico = true && false
+let ouLogico = true || false
+let negacaoLogica = !true
+
+
+If e Else:
+
+
+let idade = 18
+if idade >= 18 {
+    print("Você é maior de idade.")
+} else {
+    print("Você é menor de idade.")
+}
+
+
+For e While:
+
+
+// For
+for i in 1...5 {
+    print(i)
+}
+
+// While
+var contador = 1
+while contador <= 5 {
+    print(contador)
+    contador += 1
+}
+
+
+Função:
+
+
+func saudacao(nome: String) -> String {
+    return "Olá, \(nome)!"
+}
+print(saudacao(nome: "João"))
+
+
+Arrays:
+
+
+var frutas: [String*tipo de dado*] = ["Maçã", "Banana", "Laranja"]
+frutas.append("Manga")
+
+for fruta in frutas {
+    print(fruta)
+}
+
+// Acessando elementos
+let primeiraFruta = frutas[0]
+print("Primeira fruta: \(primeiraFruta)")

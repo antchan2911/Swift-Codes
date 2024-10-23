@@ -1,0 +1,14 @@
+Declara os atributos -> private var base: Double = 0.0
+
+Método construtor -> init() {self.base = base}
+
+O ideal é deixar o método construtor vazio, para poder declarar os objetos também vazios e preencher com os métodos corretos(setters e getters)
+
+Em Swift, cada método que não seja vazio deve ter o retorno especificado com (-> Tipo(String, Double, Int)) antes de abrir as chaves
+
+Encapsulamento dos atributos -> public(pode alterar diretamente), private(não pode alterar diretamente)
+
+Herança -> class Herdeira: Herdada {} recebe os atributos e métodos da classe herdada
+
+Override -> Sobrescreve o método da superclasse(classe herdada) na classe herdeira, de modo que o mesmo metodo possua comportamentos diferentes
+(polimorfismo) com base no objeto que chama
